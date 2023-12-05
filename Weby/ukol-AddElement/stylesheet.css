@@ -1,0 +1,25 @@
+table tr td{
+    border: black 1px solid;
+    font-size: 20px;
+}
+table{
+    border-collapse: collapse;
+    width: 30vw;
+    height: 30vW;
+    margin: 50px auto;
+    text-align: center;
+}
+/*
+@keyframes hoverChange {
+    from {background-color: white;}
+    to {background-color: red;}
+}
+*/
+tr:hover {
+    color: red;
+    background-color: red;
+    /*
+    animation-name: hoverChange;
+    animation-duration: 0.5s;
+    */
+}
