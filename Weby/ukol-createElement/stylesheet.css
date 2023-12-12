@@ -1,0 +1,19 @@
+body{
+    color: #000000;
+}
+#testElement{
+    margin-bottom: 10px;
+}
+em{
+    display: none;
+}
+button{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+#container p{
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+}
