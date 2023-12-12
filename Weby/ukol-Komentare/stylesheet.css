@@ -1,0 +1,33 @@
+#comments{
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+.comment{
+    padding: 5px 10px;
+    background-color: #ececec;
+    border-radius: 15px;
+    box-shadow: #cccccc 1px 1px 5px;
+    width: 400px;
+}
+.userData{
+    display: flex;
+    justify-content: space-between;
+}
+.userData span{
+    font-size: 13px;
+    color: #606060;
+}
+#delete{
+    width: 100px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+img{
+    width: 20px;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
