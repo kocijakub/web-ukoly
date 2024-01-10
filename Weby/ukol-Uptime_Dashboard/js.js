@@ -1,14 +1,8 @@
 let scoreDiv = document.querySelector('#scoreDiv')
 let scores = []
-let uptimeNow = document.querySelector('#uptime')
-
 let status = document.createElement('p')
 status.className = 'status'
-
-let lastDownDiv = document.querySelector('#lastDown')
 let lastDown = document.createElement('p')
-
-let averageDiv = document.querySelector('#average')
 let average = document.createElement('p')
 
 for (let i = 0; i < 15; i++) {
@@ -46,15 +40,14 @@ function ChangeScores(){
     }
     status.textContent = text
     status.id = text
-
     average.textContent = (100 / scores.length * uptimeCount).toFixed(2)+' %'
 }
 scores.forEach(item =>{
     scoreDiv.appendChild(item)
 })
-uptimeNow.appendChild(status)
-lastDownDiv.appendChild(lastDown)
-averageDiv.appendChild(average)
+document.querySelector('#uptime').appendChild(status)
+document.querySelector('#lastDown').appendChild(lastDown)
+document.querySelector('#average').appendChild(average)
 function Alert(){
     let alertDiv = document.createElement('div')
     let text = document.createElement('p')
@@ -64,12 +57,8 @@ function Alert(){
     alertDiv.className = 'alert'
     alertDiv.appendChild(alex)
     alertDiv.appendChild(text)
-    let body = document.querySelector('body')
-    body.appendChild(alertDiv)
-    setTimeout(DeleteAlert,2000)
-}
-function DeleteAlert(){
-    document.querySelector('.alert').remove()
+    document.querySelector('body').appendChild(alertDiv)
+    setTimeout(item => document.querySelector('.alert').remove(),2000)
 }
 document.querySelector('#refresh').addEventListener('click',ChangeScores)
 document.querySelector('#showAlert').addEventListener('click',Alert)
