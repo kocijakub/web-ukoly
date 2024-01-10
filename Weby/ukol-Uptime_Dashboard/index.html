@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="navL">
+            <h2>Uptime Dashboard</h2>
+        </div>
+        <div class="navR">
+            <button id="refresh">Refresh</button>
+            <button id="showAlert">Show Alert</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="mainDiv">
+            <h2>Uptime Score</h2>
+            <div id="scoreDiv"></div>
+        </div>
+        <div class="mainDiv" id="secondDiv">
+            <h2>Uptime Details</h2>
+            <div id="uptime">
+                <p>Uptime:</p>
+            </div>
+            <div id="lastDown">
+                <p>Last downtime:</p>
+            </div>
+            <div id="average">
+                <p>Average uptime:</p>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
