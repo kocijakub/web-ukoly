@@ -39,7 +39,7 @@ function ChangeScores(){
     })
     if(dayOfError === 0){
         lastDown.textContent = 'never'
-    }else if(dayOfError === 1){
+    }else if(scores.length-dayOfError === 1){
         lastDown.textContent = 1+' day ago'
     }else{
         lastDown.textContent = scores.length-dayOfError+' days ago'
