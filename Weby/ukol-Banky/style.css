@@ -10,16 +10,34 @@ body{
     flex-wrap: wrap;
 }
 .nav{
+    position: relative;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 input{
+    font-size: inherit;
     border-radius: 2px;
     box-shadow: #878787 0px 0px 3px;
     border: none;
     width: 50vw;
-    height: 30px;
+    height: 50px;
+}
+.heartDiv{
+    position: absolute;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: inherit;
+}
+.heart{
+    background-color: inherit;
+    border: none;
+}
+#count{
+    font-size: 25px;
 }
 .card{
     flex-shrink: 1;
@@ -62,3 +80,7 @@ input{
 #greenB{
     background-color: #21c55d;
 }
+#checkbox,#heartOn{
+    display: none;
+}
+
