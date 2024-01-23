@@ -1,4 +1,3 @@
-let taskDiv = document.querySelector('.tasks')
 let todos = [
     {
         title:'Název',
@@ -51,10 +50,7 @@ function FindNewTask(){
     }
 }
 function AllTitles(){
-    let titles = document.querySelectorAll('.title')
-    let values = []
-    titles.forEach(item =>{
-        values.push(item.textContent)
+    return todos.map(item =>{
+        return item.title
     })
-    return values
 }
