@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, serif;
+}
+h1{
+    text-align: left;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+p{
+    margin: 0;
+}
+.tasks{
+    width: fit-content;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.task{
+    width: 450px;
+    padding: 15px;
+    border: #55d277 2px solid;
+    border-radius: 15px;
+    background-color: #ecfdf5;
+}
+#done{
+    text-decoration: line-through;
+    background-color: white;
+    border-color: #a9a9a9;
+}
