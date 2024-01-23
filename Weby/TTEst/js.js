@@ -49,6 +49,7 @@ function FindNewTask(){
         isDone: task.id
     }
 }
+//druhy ukol
 function AllTitles(){
     return todos.map(item =>{
         return item.title
