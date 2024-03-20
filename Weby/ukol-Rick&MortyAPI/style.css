@@ -1,0 +1,77 @@
+h1{
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 30px 20px;
+    margin-bottom: 20px;
+    border-bottom: #d2d2d2 1px solid;
+}
+ul{
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    gap: 10px;
+    width: inherit;
+}
+li{
+    font-size: 20px;
+    border: #d2d2d2 1px solid;
+    padding: 4px 5px;
+    border-radius: 5px;
+}
+input{
+    border-radius: 100%;
+}
+li:hover{
+    background-color: #f3f4f6;
+}
+#characters{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    border-radius: 15px;
+    border: #d2d2d2 1px solid;
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.textDiv{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.textDiv p{
+    width: 50px;
+    margin: 10px 0;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+}
+#buttons button{
+    border: #d2d2d2 1px solid;
+    background-color: white;
+    border-radius: 10px;
+    margin: 30px;
+    width: 150px;
+    height: 70px;
+}
+#buttons button:hover{
+    background-color: #f3f4f6;
+}
