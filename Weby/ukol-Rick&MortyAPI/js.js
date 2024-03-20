@@ -83,8 +83,8 @@ document.querySelector("#next").addEventListener('click',async () => {
 
 document.querySelector("#previous").addEventListener('click',async () =>{
     if(prev !== null){
-        let data = await getData()
         url = prev
+        let data = await getData()
         prev = data.info.prev
         getChars()
     }
